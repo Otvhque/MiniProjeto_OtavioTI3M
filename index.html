@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Mini Projeto</title>
+</head>
+<body>
+    <div class="cabecalho">
+
+        <label for="nota">Nota: </label>
+        <input type="text" id="nota">
+
+        <button id="btnAdd" onclick="adicionar()">Adicionar</button>
+        <br><br>
+
+        <label>urgente:</label>
+        <input type="checkbox" id="sim" onclick="sim()">
+        <label for="sim">sim</label>
+        <input type="checkbox" id="nao" onclick="nao()">
+        <label for="nao">não</label>
+    </div>
+    <div class="separador">
+
+        <div class="urgentes">
+            <h4>Urgentes</h4>
+            <ul id="urg">
+
+            </ul>
+            
+        </div>
+        <div class="desurgentes">
+            <h4>Não Urgentes</h4>
+            <ul id="nurg">
+
+            </ul>
+
+        </div>
+    </div>
+
+    <button onclick="deletar()">Apagar Tudo</button>
+
+    <script type="text/javascript" src="JS/script.js"></script>
+</body>
+</html>
